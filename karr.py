@@ -54,6 +54,7 @@ filename = sys.argv[1].strip()
 n_pixels = int(sys.avgv[2].strip())
 n_los = int(sys.avgv[3].strip())
 outfile = sys.avgr[4].strip
+
 velscale = get_taus(filename, n_pixels, n_los)
 
 vaxis = velscale*np.arange(0, n_pixels)/n_pixels
