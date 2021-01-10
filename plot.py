@@ -1,50 +1,48 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from pylab import rcParams
-"""
-file=open('Parr_0.txt','r')         
-P_ave=[]
+
+file = open('Parr_0.txt','r')         
+P_ave = []
 for line in file:
     P_ave.append(float(line))
-P_ave=np.array(P_ave)
-"""
+P_ave = np.array(P_ave)
 
-file1=open('Parr_0_512.txt','r')         
-P_ave=[]
+file1 = open('Parr_1.txt','r')         
+P_ave1 = []
 for line1 in file1:
-    P_ave.append(float(line1))
-P_ave=np.array(P_ave)
+    P_ave1.append(float(line1))
+P_ave1 = np.array(P_ave1)
 
-file2=open('Parr_2.txt','r')         
-P_ave2=[]
+file2 = open('Parr_2.txt','r')         
+P_ave2 = []
 for line2 in file2:
     P_ave2.append(float(line2))
+P_ave2 = np.array(P_ave2)
 
-file3=open('Parr_2_512.txt','r')         
-P_ave3=[]
+file3 = open('Parr_3.txt','r')         
+P_ave3 = []
 for line3 in file3:
     P_ave3.append(float(line3))
-P_ave3=np.array(P_ave3)
+P_ave3 = np.array(P_ave3)
 
-"""
-file4=open('Parr_33.txt','r')         
-P_ave4=[]
+file4 = open('Parr_4.txt','r')         
+P_ave4 = []
 for line4 in file4:
     P_ave4.append(float(line4))
-P_ave4=np.array(P_ave4)
+P_ave4 = np.array(P_ave4)
 
-file5=open('Parr_34.txt','r')         
-P_ave5=[]
+file5 = open('Parr_5.txt','r')         
+P_ave5 = []
 for line5 in file5:
     P_ave5.append(float(line5))
-P_ave5=np.array(P_ave5)
-"""
+P_ave5 = np.array(P_ave5)
 
-file6=open('karr_512.txt','r')         
-karr=[]
+file6 = open('karr.txt','r')         
+karr = []
 for line6 in file6:
     karr.append(float(line6))
-karr=np.array(karr)
+karr = np.array(karr)
 
 file7=open('karr.txt','r')
 karr2=[]
