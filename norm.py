@@ -1,3 +1,8 @@
+"""
+Table 2 of this paper has measured value of the mean flux at 2 < z < 5: https://ui.adsabs.harvard.edu/abs/2013MNRAS.430.2067B/abstract
+Something like this will work: python3 norm.py spec_z3.000_0.dat 256 5000 0.6670
+"""
+
 import numpy as np
 from scipy import optimize as op
 import sys
@@ -31,11 +36,12 @@ def get_taus(filename, n_pixels, n_los):
 
 specfile = sys.argv[1]
 print(specfile)
-n_pixels = 2048
-n_los = 5000 
+n_pixels = int(sys.argv[2])
+n_los = int(sys.argv[3])
+
 taus = get_taus(specfile, n_pixels, n_los)
 
-f_measured = float(sys.argv[2])
+f_measured = float(sys.argv[4])
 
 def f(a):
     
