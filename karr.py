@@ -10,7 +10,7 @@ n_los is the number of sightlines
 import numpy as np
 import sys
 
-def get_taus(filename, n_pixels, n_los):
+def get_velscale(filename, n_pixels, n_los):
     #norm = 0.9179910109957352        # fiducial 
     #norm = 0.8957986327622899        # non-power law
     #norm = 0.4931288366537928        # 10*T_0
@@ -53,7 +53,7 @@ n_pixels = int(sys.argv[2].strip())
 n_los = int(sys.argv[3].strip())
 outfile = sys.argv[4].strip()
 
-velscale = get_taus(filename, n_pixels, n_los)
+velscale = get_velscale(filename, n_pixels, n_los)
 
 vaxis = velscale*np.arange(0, n_pixels)/n_pixels
 
