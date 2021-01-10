@@ -1,5 +1,5 @@
 """
-creating the k array for the power spectrum plot
+Creating the k array for the power spectrum plot. For a given grid number you have to create only one k array.
 
 Something like this will work: python3 karr.py ./spec_z3.000_0_512.dat 512 5000 karr_512.txt
 
@@ -8,8 +8,6 @@ n_los is the number of sightlines
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
-from pylab import rcParams
 import sys
 
 def get_taus(filename, n_pixels, n_los):
@@ -27,8 +25,8 @@ def get_taus(filename, n_pixels, n_los):
     #norm = 0.7089911633630724        # 1.8*slope
     #norm = 0.9174169704210932        # -ve power at low temperature
     #norm = 0.4924037489101563        # 10*T_0 and -ve power at low temperature
-    #norm = 0.9286380805401929         # fiducial with 512 grids
-    #norm = 0.524817614661789          # 10*T_0 with 512 grids
+    #norm = 0.9286380805401929        # fiducial with 512 grids
+    #norm = 0.524817614661789         # 10*T_0 with 512 grids
     with open(filename, 'rb') as f:
         for i in range(n_los):
             n = np.fromfile(f, dtype=np.int64, count=1)
@@ -46,14 +44,14 @@ def get_taus(filename, n_pixels, n_los):
             rhoneutral = np.fromfile(f, dtype=np.float64, count=n_pixels)
             nhi = np.fromfile(f, dtype=np.float64, count=n_pixels)
             denstemp = np.fromfile(f, dtype=np.float64, count=n_pixels)
-            n2 = np.fromfile(f, dtype=np.int64, count=n_pixels)
+            n2 = np.fromfile(f, dtype=np.int64, count=1)
             assert(n==n2)
     return velscale
 
 filename = sys.argv[1].strip()
-n_pixels = int(sys.avgv[2].strip())
-n_los = int(sys.avgv[3].strip())
-outfile = sys.avgr[4].strip
+n_pixels = int(sys.argv[2].strip())
+n_los = int(sys.argv[3].strip())
+outfile = sys.argv[4].strip()
 
 velscale = get_taus(filename, n_pixels, n_los)
 
