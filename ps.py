@@ -61,8 +61,8 @@ def get_P(filename, n_pixels, n_los, norm):
 filename = sys.argv[1].strip()
 n_pixels = int(sys.argv[2].strip())
 n_los = int(sys.argv[3].strip())
-norm = float(sys.argv[3].strip())
-outfile = sys.argv[4].strip()
+norm = float(sys.argv[4].strip())
+outfile = sys.argv[5].strip()
 
 P,velscale = get_P(filename, n_pixels, n_los, norm)
 
