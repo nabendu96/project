@@ -17,9 +17,9 @@
     #norm = 0.7937037781441553        # 1.5*T_0 & 1.2*slope
     #norm = 1.0634430350217505        # 0.5*T_0 & 0.8*slope
     #norm = 1.0042998814005173        # 0.5*T_0 & 1.2*slope
-    #norm = 0.8807079538454353        # 1.5*T_0 & 0.8*slope        
-    #norm = 1.0020458208268055        # 0.75*T_0 & 0.8*slope
+    #norm = 0.8807079538454353        # 1.5*T_0 & 0.8*slope 
     #norm = 0.9315499033929882        # 0.75*T_0 & 1.2*slope
+    #norm = 1.0020458208268055        # 0.75*T_0 & 0.8*slope
     #norm = 0.9174169704210932        # -ve power at low temperature
     #norm = 0.4924037489101563        # 10*T_0 and -ve power at low temperature
     #norm = 0.9286380805401929        # fiducial with 512 grids
