@@ -1,5 +1,6 @@
     #norm = 0.9179910109957352        # fiducial
-    #norm = 0.8957986327622899        # non-power law
+    #norm = 0.8957986327622899        # non-power law upto $\Delta = 0.5$
+    #norm = 0.8945673870235125        # non-power law upto $\Delta = 1$
     #norm = 0.4931288366537928        # 10*T_0
     #norm = 0.7835412796289518        # 2*T_0
     #norm = 0.6490402406402864        # 4*T_0
