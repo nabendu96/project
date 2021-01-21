@@ -1,9 +1,9 @@
     #norm = 0.9179910109957352        # fiducial
     #norm = 0.8953843659041092        # non-power law upto $\Delta = 0.5$
-    #norm = 0.8945673870235125        # non-power law upto $\Delta = 1$
-    #norm = 0.7936543863148459        # upper limit $10^5$
-    #norm = 0.836813398728203         # upto $\Delta = 0.5$, limit $10^5$
-    #norm = 0.848623213170954         # upto $\Delta = 1$, limit $10^{4.75}$
+    #norm = 0.8909307534968267        # non-power law upto $\Delta = 1$
+    #norm = 0.7934664906201896        # upper limit $10^5$
+    #norm = 0.8367417944053199         # upto $\Delta = 0.5$, limit $10^5$
+    #norm = 0.8478478842944762         # upto $\Delta = 1$, limit $10^{4.75}$
     #norm = 0.4931288366537928        # 10*T_0
     #norm = 0.7835412796289518        # 2*T_0
     #norm = 0.6490402406402864        # 4*T_0
