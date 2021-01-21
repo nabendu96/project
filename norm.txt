@@ -1,5 +1,5 @@
     #norm = 0.9179910109957352        # fiducial
-    #norm = 0.8957986327622899        # non-power law upto $\Delta = 0.5$
+    #norm = 0.8953843659041092        # non-power law upto $\Delta = 0.5$
     #norm = 0.8945673870235125        # non-power law upto $\Delta = 1$
     #norm = 0.7936543863148459        # upper limit $10^5$
     #norm = 0.836813398728203         # upto $\Delta = 0.5$, limit $10^5$
