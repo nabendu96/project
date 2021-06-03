@@ -26,7 +26,7 @@ def get_P(filename, n_pixels, n_los, norm):
             dirflag = np.fromfile(f, dtype=np.int64, count=1)
             tau = np.fromfile(f, dtype=np.float64, count=n_pixels)
             taus[:,i] = tau
-            taus[:,i] -= taus[:,i].min()
+            #taus[:,i] -= taus[:,i].min()
             flux[:,i] = np.exp(-norm*taus[:,i]) 
             mean_flux = np.mean(flux[:,i], axis=0)
             flux[:,i] = (flux[:,i] - mean_flux)/mean_flux     #flux contrast
